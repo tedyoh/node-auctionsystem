@@ -30,10 +30,3 @@ module.exports = class Auction extends Sequelize.Model {
         db.Auction.belongsTo(db.Good);
     }
 };
-
-/*
-마지막으로 경매 모델은 입찰가(bid)와 입찰 시 메시지(msg)로 구성됩니다. 
-입찰 시 메시지는 null 이어도 됩니다. 
-경매 모델은 사용자 모델 및 상품 모델과 일대다 관계에 있습니다. 
-경매 모델에는 UserId 컬럼과 GoodId  컬럼이 생성됩니다. 
-*/
