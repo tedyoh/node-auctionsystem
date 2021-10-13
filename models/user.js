@@ -38,9 +38,3 @@ module.exports = class User extends Sequelize.Model {
         db.User.hasMany(db.Auction);
     }
 };
-
-/*
-사용자 모델은 이메일(email), 닉네임(nick), 비밀번호(password), 보유자금(money)으로 구성됩니다. 
-사용자가 입찰을 여러번 할 수 있으므로 사용자 모델과 경매 모델도 일대다 관계입니다. 
-*/
-
