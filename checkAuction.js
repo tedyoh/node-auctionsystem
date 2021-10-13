@@ -1,6 +1,6 @@
 'use strict';
 
-const { Op } = require('Sequelize');
+const { Op } = require('sequelize');
 
 const { Good, Auction, User, sequelize } = require('./models');
 
